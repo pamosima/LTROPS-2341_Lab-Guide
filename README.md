@@ -1,4 +1,4 @@
-# Terraform Automation Workshop Enterprise Networking
+# Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
 Beneath you will find general information regarding the lab and basic explanation about terraform.
 
