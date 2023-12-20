@@ -53,11 +53,11 @@ Use Remote Desktop Client Already Installed on Your Laptop:
 
 | Site    | IP Address     | Username | Password   |
 | ------- | -------------- | -------- | ---------- |
-| Site-11 | 198.18.133.141 | user1    | C1sco12345 |
-| Site-12 | 198.18.133.142 | user2    | C1sco12345 |
-| Site-13 | 198.18.133.143 | user3    | C1sco12345 |
-| Site-14 | 198.18.133.144 | user4    | C1sco12345 |
-| Site-15 | 198.18.133.145 | user5    | C1sco12345 |
+| Site 11 | 198.18.133.141 | user1    | C1sco12345 |
+| Site 12 | 198.18.133.142 | user2    | C1sco12345 |
+| Site 13 | 198.18.133.143 | user3    | C1sco12345 |
+| Site 14 | 198.18.133.144 | user4    | C1sco12345 |
+| Site 15 | 198.18.133.145 | user5    | C1sco12345 |
 
 <div align="right">
   <a href='../General Information/README.md'>Prev: General Information</a> - <a href='../Missions/README.md'>Next: Missions</a>

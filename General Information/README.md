@@ -19,11 +19,11 @@ In this lab activity, you will learn how to use Terraform to deploy and configur
 
 | Site    | VRF | Subnet         |
 | ------- | --- | -------------- |
-| Site-11 | 20  | 172.20.11/0/24 |
-| Site-12 | 20  | 172.20.12/0/24 |
-| Site-13 | 20  | 172.20.13/0/24 |
-| Site-14 | 20  | 172.20.14/0/24 |
-| Site-15 | 20  | 172.20.15/0/24 |
+| Site 11 | 20  | 172.20.11/0/24 |
+| Site 12 | 20  | 172.20.12/0/24 |
+| Site 13 | 20  | 172.20.13/0/24 |
+| Site 14 | 20  | 172.20.14/0/24 |
+| Site 15 | 20  | 172.20.15/0/24 |
 
 #### Working directories
 
