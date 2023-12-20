@@ -16,3 +16,7 @@ Beneath you will find information regarding your missions.
 | Site-13 | <a href='./Site 13/Mission 1/README.md'>README.md</a> | <a href='./Site 13/Mission 2/README.md'>README.md</a> | <a href='./Site 13/Mission 3/README.md'>README.md</a> |
 | Site-14 | <a href='./Site 14/Mission 1/README.md'>README.md</a> | <a href='./Site 14/Mission 2/README.md'>README.md</a> | <a href='./Site 14/Mission 3/README.md'>README.md</a> |
 | Site-15 | <a href='./Site 15/Mission 1/README.md'>README.md</a> | <a href='./Site 15/Mission 2/README.md'>README.md</a> | <a href='./Site 15/Mission 3/README.md'>README.md</a> |
+
+<div align="right">
+  <a href='../How to get started/README.md'>Prev: How to get started</a>
+</div>

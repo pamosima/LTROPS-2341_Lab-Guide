@@ -86,3 +86,7 @@ In Terraform, both resources and data sources are used to represent and interact
 - Terraform Resource: A Terraform resource represents a provisioned infrastructure component, such as a virtual machine, a database, or a network resource. Resources are declared and managed within your Terraform configuration files using a resource block. When you apply your Terraform configuration, resources are created, updated, or destroyed to match the desired state defined in your configuration.
 - Terraform Data Source: A Terraform data source allows you to fetch information or access existing resources that are managed outside of Terraform. Data sources provide a way to query and retrieve information from external systems, such as cloud providers or other APIs, and make that information available for use within your Terraform configuration.
   To summarize, resources represent the infrastructure components you manage and provision with Terraform, while data sources allow you to fetch information to use within your Terraform configuration. Resources are created, updated, or destroyed by Terraform, while data sources provide read-only access to external data.
+
+<div align="right">
+  <a href='../How to get started/README.md'>Next: How to get started</a>
+</div>

@@ -89,5 +89,5 @@ Verify that your Switch got claimed, configured and assigned to your Site by nav
 <img src=../../img/site-switch.jpg/ width=80%>
 
 <div align="right">
-  <a href='../Mission 1/README.md'>Prev</a> - <a href='../Mission 3/README.md'>Next</a>
+  <a href='../Mission 1/README.md'>Prev: Mission 1</a> - <a href='../Mission 3/README.md'>Next: Mission 3</a>
 </div>

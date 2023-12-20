@@ -38,5 +38,5 @@ Example Site21:
 <img src=../../img/sd-wan.jpg/>
 
 <div align="right">
-  <a href='../Mission 2/README.md'>Next</a>
+  <a href='../Mission 2/README.md'>Next: Mission 2</a>
 </div>
