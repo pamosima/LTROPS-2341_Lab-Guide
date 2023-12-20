@@ -10,7 +10,7 @@ Use the following terraform provider and make sure to use the specified version.
 | ------------- | ------------------------------------------------------------------------------------------- |
 | Provider      | cisco-en-programmability/dnacenter                                                          |
 | Version       | 1.1.31-beta                                                                                 |
-| Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.0.12-beta/docs |
+| Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.1.31-beta/docs |
 | DNAC URL      | https://198.18.129.100                                                                      |
 | DNAC User     | user1                                                                                       |
 | DNAC Password | C1sco12345                                                                                  |

@@ -7,14 +7,14 @@ Your SD-WAN Router is already reachable by vManage and all the required template
 
 Use the following terraform provider and make sure to use the specified version.
 
-| Specification    | Details                                                               |
-| ---------------- | --------------------------------------------------------------------- |
-| Provider         | CiscoDevNet/sdwan                                                     |
-| Version          | 0.1.0                                                                 |
-| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/latest/docs |
-| vManage URL      | https://198.18.128.2                                                  |
-| vManage User     | user1                                                                 |
-| vManage Password | C1sco12345                                                            |
+| Specification    | Details                                                              |
+| ---------------- | -------------------------------------------------------------------- |
+| Provider         | CiscoDevNet/sdwan                                                    |
+| Version          | 0.1.0                                                                |
+| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/0.1.0/docs |
+| vManage URL      | https://198.18.128.2                                                 |
+| vManage User     | user1                                                                |
+| vManage Password | C1sco12345                                                           |
 
 ## Step 1: Attach device-template the to router
 
