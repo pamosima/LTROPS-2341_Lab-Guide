@@ -12,6 +12,8 @@ Use the following terraform provider and make sure to use the specified version.
 | Version       | 1.1.31-beta                                                                                 |
 | Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.0.12-beta/docs |
 | DNAC URL      | https://198.18.129.100                                                                      |
+| DNAC User     | user3                                                                                       |
+| DNAC Password | C1sco12345                                                                                  |
 
 ## Step 1: Create DNA-Center site
 
@@ -87,5 +89,5 @@ Verify that your Switch got claimed, configured and assigned to your Site by nav
 <img src=../../img/site-switch.jpg/ width=80%>
 
 <div align="right">
-  <a href='../Mission 1/README.md'>Prev</a> - <a href='../Mission 3/README.md'>Next</a>
+  <a href='../Mission 1/README.md'>Prev: Mission 1</a> - <a href='../Mission 3/README.md'>Next: Mission 3</a>
 </div>
