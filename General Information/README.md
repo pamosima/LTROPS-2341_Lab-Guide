@@ -1,33 +1,17 @@
 # Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
-## Learning Objectives
-
-Upon completion of this lab, you will be able to:
-
-- Configure a Catalyst SD-WAN cEdge Router with Terraform
-- Onboard and configure a Switch with Cisco Catalyst Center with Terraform
-- XXX
-
-## Table of Contents
-
-- General Information
-- How to get started
-- Missions
-
-## Disclaimer
-
-This training document is to familiarize with Terraform used on Cisco Enterprise Networking Solutions. Although the lab design and configuration examples could be used as a reference, it’s not a real design, thus not all recommended features are used, or enabled optimally. For the design related questions please contact your representative at Cisco, or a Cisco partner.
+## General Information
 
 Beneath you will find general information regarding the lab and basic explanation about terraform.
 
 :warning:
-:exclamation: To get started with your missions, open the directory (in this repository) for your site and follow the corresponding readme.
+:exclamation: To get started with your missions, open the Missions directory (in this repository) for your site and follow the corresponding readme.
 
-## Network Diagram
+### Network Diagram
 
 ![Network Diagram](img/layout.jpg)
 
-## Overlay IP Addressing
+### Overlay IP Addressing
 
 | Site   | VRF | Subnet         |
 | ------ | --- | -------------- |
@@ -37,13 +21,13 @@ Beneath you will find general information regarding the lab and basic explanatio
 | Site14 | 20  | 172.20.14/0/24 |
 | Site15 | 20  | 172.20.15/0/24 |
 
-## Working directories
+### Working directories
 
 You should have at least three different working directories, one for each mission. In each directory you shall create a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
 
 <img src=img/work_dirs.jpg width=30%>
 
-## Basic Terraform commands
+### Basic Terraform commands
 
 ```bash
 terraform init
@@ -91,7 +75,7 @@ The terraform destroy command is used to destroy the infrastructure that has bee
 - Updates the Terraform state
   It's crucial to exercise caution when using terraform destroy as it permanently removes resources and can result in data loss. It's recommended to take backups and thoroughly review the destruction plan before executing the command.
 
-## Resource and Data source
+### Resource and Data source
 
 In Terraform, both resources and data sources are used to represent and interact with infrastructure components, but they serve different purposes and have distinct behaviors.
 

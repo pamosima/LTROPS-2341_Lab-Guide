@@ -10,9 +10,9 @@ Upon completion of this lab, you will be able to:
 
 ## Table of Contents
 
-- General Information
-- How to get started
-- Missions
+- <a href='../General Information/README.md'>General Information</a>
+- <a href='../How to get started/README.md'>How to get started</a>
+- <a href='../Missions/README.md'>Missions</a>
 
 ## Disclaimer
 
