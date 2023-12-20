@@ -7,22 +7,24 @@ Your SD-WAN Router is already reachable by vManage and all the required template
 
 Use the following terraform provider and make sure to use the specified version.
 
-Specification | Details
-------------- | --- 
-Provider      | CiscoDevNet/sdwan
-Version       | 0.1.0
-Documentation | https://registry.terraform.io/providers/CiscoDevNet/sdwan/latest/docs
-vManage URL   | https://198.18.128.2
+| Specification    | Details                                                               |
+| ---------------- | --------------------------------------------------------------------- |
+| Provider         | CiscoDevNet/sdwan                                                     |
+| Version          | 0.1.0                                                                 |
+| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/latest/docs |
+| vManage URL      | https://198.18.128.2                                                  |
+| vManage User     | user4                                                                 |
+| vManage Password | C1sco12345                                                            |
 
 ## Step 1: Attach device-template the to router
 
 Your task is to attach a predefined device-template to the router with the required device variables. Use the prepared .csv file in this directory.
 
-Required parameters | Value
------------------- | --- 
-device_template_id | *$ID from device-template "C8Kv_Branch"*
-file               | device_vars.csv
-chassis_number     | C8K-5D6F8452-A4F2-1395-3C1A-DDCE642B69C6
+| Required parameters | Value                                    |
+| ------------------- | ---------------------------------------- |
+| device_template_id  | _$ID from device-template "C8Kv_Branch"_ |
+| file                | device_vars.csv                          |
+| chassis_number      | C8K-5D6F8452-A4F2-1395-3C1A-DDCE642B69C6 |
 
 :exclamation: :warning: Use a data source to get the device_template_id for the device-template **"C8Kv_Branch"**
 
@@ -36,5 +38,5 @@ Example Site21:
 <img src=../../img/sd-wan.jpg/>
 
 <div align="right">
-  <a href='../Mission 2/README.md'>Next</a>
+  <a href='../Mission 2/README.md'>Next: Mission 2</a>
 </div>
