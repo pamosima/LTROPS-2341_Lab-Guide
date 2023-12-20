@@ -2,7 +2,9 @@
 
 ## Missions
 
-Beneath you will find information regarding your missions. It's important to follow the steps for your assigned site:
+Beneath you will find information regarding your missions.
+:warning:
+:exclamation: It's important to follow the steps for your assigned site!
 
 ### Mission Overview
 
