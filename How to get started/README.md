@@ -5,7 +5,7 @@
 
 ## How to get started
 
-Beneath you will find information how to connect to the lab and working with your pod (Wkst).
+Beneath you will find information how to [connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect) and [working with your pod (Wkst)](#connect-to-your-pod-wkst-using-remote-desktop-client).
 
 ### Connect Laptop to dCloud Session Using Cisco AnyConnect
 
