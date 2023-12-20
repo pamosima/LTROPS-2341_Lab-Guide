@@ -5,7 +5,7 @@
 
 ## General Information
 
-Beneath you will find [general information regarding the lab](#scenario) and [basic explanation about terraform](#basic).
+Beneath you will find [general information regarding the lab](#scenario) and [basic explanation about terraform](#basic-terraform-commands).
 
 ### Scenario
 
