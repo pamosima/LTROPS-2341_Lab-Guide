@@ -2,17 +2,14 @@
 
 ## Missions
 
-Beneath you will find general information regarding the lab and basic explanation about terraform.
+Beneath you will find information regarding your missions. It's important to follow the steps for your assigned site.
 
-:warning:
-:exclamation: To get started with your missions, open the Missions directory (in this repository) for your site and follow the corresponding readme.
+### Mission Overview
 
-### Overlay IP Addressing
-
-| Site   | VRF | Subnet         |
-| ------ | --- | -------------- |
-| Site11 | 20  | 172.20.11/0/24 |
-| Site12 | 20  | 172.20.12/0/24 |
-| Site13 | 20  | 172.20.13/0/24 |
-| Site14 | 20  | 172.20.14/0/24 |
-| Site15 | 20  | 172.20.15/0/24 |
+| Site    | Mission 1                                              | Mission 2                                              | Mission 3                                              |
+| ------- | ------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
+| Site-11 | <a href='../Site 11/Mission 1/README.md'>README.md</a> | <a href='../Site 11/Mission 2/README.md'>README.md</a> | <a href='../Site 11/Mission 3/README.md'>README.md</a> |
+| Site-12 | <a href='../Site 12/Mission 1/README.md'>README.md</a> | <a href='../Site 12/Mission 2/README.md'>README.md</a> | <a href='../Site 12/Mission 3/README.md'>README.md</a> |
+| Site-13 | <a href='../Site 13/Mission 1/README.md'>README.md</a> | <a href='../Site 13/Mission 2/README.md'>README.md</a> | <a href='../Site 13/Mission 3/README.md'>README.md</a> |
+| Site-14 | <a href='../Site 14/Mission 1/README.md'>README.md</a> | <a href='../Site 14/Mission 2/README.md'>README.md</a> | <a href='../Site 14/Mission 3/README.md'>README.md</a> |
+| Site-15 | <a href='../Site 15/Mission 1/README.md'>README.md</a> | <a href='../Site 15/Mission 2/README.md'>README.md</a> | <a href='../Site 15/Mission 3/README.md'>README.md</a> |
