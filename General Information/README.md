@@ -1,7 +1,7 @@
 # Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
 :warning:
-:exclamation: To get started with your missions, open the <a href='./Missions/README.md'>README.md</a> in the Missions directory.
+:exclamation: To get started with your missions, open the <a href='../Missions/README.md'>README.md</a> in the Missions directory.
 
 ## General Information
 
