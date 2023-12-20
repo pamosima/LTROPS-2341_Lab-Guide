@@ -5,13 +5,17 @@
 
 ## General Information
 
-Beneath you will find general information regarding the lab and basic explanation about terraform.
+Beneath you will find [general information regarding the lab](#scenario) and [basic explanation about terraform](#basic).
 
-### Network Diagram
+### Scenario
+
+In this lab activity, you will learn how to use Terraform to deploy and configure Cisco Enterprise Networking Solutions. In the first task you will configure a new SD-WAN cEdge Router to establish Fabric-Connectivity at your branch. In a second step you will deploy Branch-Switching by onboarding and configuring a Catalyst 9000 Switch.
+
+#### Network Diagram
 
 ![Network Diagram](img/layout.jpg)
 
-### Overlay IP Addressing
+#### Overlay IP Addressing
 
 | Site   | VRF | Subnet         |
 | ------ | --- | -------------- |
@@ -21,7 +25,7 @@ Beneath you will find general information regarding the lab and basic explanatio
 | Site14 | 20  | 172.20.14/0/24 |
 | Site15 | 20  | 172.20.15/0/24 |
 
-### Working directories
+#### Working directories
 
 You should have at least three different working directories, one for each mission. In each directory you shall create a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
 
