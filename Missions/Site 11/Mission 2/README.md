@@ -1,6 +1,6 @@
-# Mission 2: Create site in DNA-C and deploy your Switch
+# Mission 2: Create site in Catalyst Center and deploy your Switch
 
-In this mission you first deploy your Site in DNA-C and then onboard your Switch and assign it to your newly created site.
+In this mission you first deploy your Site in Catalyst Center and then onboard your Switch and assign it to your newly created site.
 
 ## Terraform provider
 
