@@ -24,7 +24,7 @@ Your task is to attach a predefined device-template to the router with the requi
 | ------------------- | ---------------------------------------- |
 | device_template_id  | _$ID from device-template "C8Kv_Branch"_ |
 | file                | device_vars.csv                          |
-| chassis_number      | C8K-5D6F8452-A4F2-1395-3C1A-DDCE642B69C6 |
+| chassis_number      | C8K-C191341E-108D-5CDC-6220-BA6228D716A6 |
 
 :exclamation: :warning: Use a data source to get the device_template_id for the device-template **"C8Kv_Branch"**
 
