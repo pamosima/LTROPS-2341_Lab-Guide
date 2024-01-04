@@ -5,7 +5,7 @@ In this mission you first deploy your Site in Catalyst Center and then onboard y
 ## Terraform provider
 
 :warning:
-:exclamation: Even if we are running Catalyst Center Version 2.3.7.4 in this lab we are still using the dnacenter terraform provider. As there are missing ressources in the new catalystcenter provider. Make sure to use the following terraform provider and use the exact specified version (as we tested the lab with this version).
+:exclamation: While operating Catalyst Center Version 2.3.7.4 within this lab, we continue to use the dnacenter Terraform provider. This choice is motivated by the absence of certain resources in the recently introduced catalystcenter provider. It is imperative to utilize the specified Terraform provider and adhere to the exact version mentioned, as the lab has been thoroughly tested with this specific version.
 
 | Specification | Details                                                                                     |
 | ------------- | ------------------------------------------------------------------------------------------- |
