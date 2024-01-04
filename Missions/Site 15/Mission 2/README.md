@@ -1,10 +1,11 @@
-# Mission 2: Create site in DNA-C and deploy your Switch
+# Mission 2: Create site in Catalyst Center and deploy your Switch
 
-In this mission you first deploy your Site in DNA-C and then onboard your Switch and assign it to your newly created site.
+In this mission you first deploy your Site in Catalyst Center and then onboard your Switch and assign it to your newly created site.
 
 ## Terraform provider
 
-Use the following terraform provider and make sure to use the specified version.
+:warning:
+:exclamation: Even if we are running Catalyst Center Version 2.3.7.4 in this lab we are still using the dnacenter terraform provider. As there are missing ressources in the new catalystcenter provider. Make sure to use the following terraform provider and use the exact specified version (as we tested the lab with this version).
 
 | Specification | Details                                                                                     |
 | ------------- | ------------------------------------------------------------------------------------------- |
@@ -15,7 +16,7 @@ Use the following terraform provider and make sure to use the specified version.
 | DNAC User     | user5                                                                                       |
 | DNAC Password | C1sco12345                                                                                  |
 
-## Step 1: Create DNA-Center site
+## Step 1: Create Catalyst Center site
 
 Create a subarea, building and floor using Terraform with your Site-specific values.
 
@@ -49,7 +50,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 | length              | 100                             |
 | width               | 100                             |
 
-Log in to DNA-Center and verify your newly created site under Design -> Network Hierarchy.
+Log in to Catalyst Center and verify your newly created site under Design -> Network Hierarchy.
 Example Site21:
 
 <img src=../../img/network_hierarchy.jpg/ width=30%>
@@ -84,7 +85,7 @@ data "dnacenter_configuration_template" "pnp_template" {
 
 ## Step 3: Verification
 
-Verify that your Switch got claimed, configured and assigned to your Site by navigating to Provision -> Inventory and choose your site in the DNA-C UI:
+Verify that your Switch got claimed, configured and assigned to your Site by navigating to Provision -> Inventory and choose your site in the Catalyst Center UI:
 
 <img src=../../img/site-switch.jpg/ width=80%>
 
