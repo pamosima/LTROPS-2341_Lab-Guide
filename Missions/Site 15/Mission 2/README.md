@@ -23,31 +23,31 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 
 ### Step 1a: Create an area
 
-| Required parameters | Value         |
-| ------------------- | ------------- |
-| name                | Site-15       |
-| parent_name         | Global/DevNet |
+| Required parameters | Value              |
+| ------------------- | ------------------ |
+| name                | Site-15            |
+| parent_name         | Global/LTROPS-2341 |
 
 ### Step 1b: Create a building
 
 | Required parameters | Value                                          |
 | ------------------- | ---------------------------------------------- |
 | name                | 15-1                                           |
-| parent_name         | Global/DevNet/Site-15                          |
+| parent_name         | Global/LTROPS-2341/Site-15                     |
 | address             | Richtistrasse 7, 8304 Wallisellen, Switzerland |
 | latitude            | 47.409871                                      |
 | longitude           | 8.590509                                       |
 
 ### Step 1c: Create a floor
 
-| Required parameters | Value                      |
-| ------------------- | -------------------------- |
-| name                | 15-1-1                     |
-| parent_name         | Global/DevNet/Site-15/15-1 |
-| rf_model            | Cubes And Walled Offices   |
-| height              | 100                        |
-| length              | 100                        |
-| width               | 100                        |
+| Required parameters | Value                           |
+| ------------------- | ------------------------------- |
+| name                | 15-1-1                          |
+| parent_name         | Global/LTROPS-2341/Site-15/15-1 |
+| rf_model            | Cubes And Walled Offices        |
+| height              | 100                             |
+| length              | 100                             |
+| width               | 100                             |
 
 Log in to DNA-Center and verify your newly created site under Design -> Network Hierarchy.
 Example Site21:
