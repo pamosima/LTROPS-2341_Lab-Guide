@@ -15,23 +15,14 @@ Access to this lab sessions in Cisco dCloud requires a VPN connection between yo
 
 To use the Cisco AnyConnect client already installed on your laptop:
 
-1. For the AnyConnect credentials, scroll to the [AnyConnect section](#anyconnect-section) on this page.
+1. For the AnyConnect credentials, please refer to the information provided in your printed lab getting started guide.
 2. Start Cisco AnyConnect on your laptop.
-3. Copy the Host URL from the [AnyConnect section](#anyconnect-section), paste it in the URL Connection box in the AnyConnect login window, and then click Connect.
-4. Copy the user ID (User) and the password from the [AnyConnect section](#anyconnect-section) and then paste each into the Cisco AnyConnect login window.
+3. Retrieve the Host URL details as outlined in the AnyConnect section of the printed lab getting started guide. Write this information into the URL Connection box within the AnyConnect login window, and subsequently, click on the Connect button.
+4. Obtain the user ID (User) and password from the AnyConnect section in the printed lab getting started guide. Write each credential into the corresponding fields within the Cisco AnyConnect login window.
 5. Click OK.
 6. Click Accept on the window confirming your connection.
 7. When connected to your AnyConnect VPN session, the AnyConnect VPN icon is displayed in the system tray (Windows).
 8. To view connection details or to disconnect, click the AnyConnect VPN icon and then choose Disconnect.
-
-### AnyConnect section
-
-| Group   | Host                            | User       | Password |
-| ------- | ------------------------------- | ---------- | -------- |
-| Group 1 | dcloud-lon-anyconnect.cisco.com | v2956user1 | 3cf02c   |
-| Group 2 | dcloud-lon-anyconnect.cisco.com | v2873user1 | 31391a   |
-| Group 3 | dcloud-lon-anyconnect.cisco.com | xxx        | xxx      |
-| Group 4 | dcloud-lon-anyconnect.cisco.com | xxx        | xxx      |
 
 ### Connect to your Pod (Wkst) Using Remote Desktop Client
 
