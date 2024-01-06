@@ -94,6 +94,8 @@ show vlan
 
 Verify if vlan has been created and if it's assigned to the interfaces Gig1/0/2-8.
 
+<img src=../../img/show_vlan.png/>
+
 <div align="right">
   <a href='../Mission 2/README.md'>Prev: Mission 2</a>
 </div>
