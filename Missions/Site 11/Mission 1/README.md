@@ -10,23 +10,27 @@ Use the following terraform provider and make sure to use the specified version.
 | Specification    | Details                                                              |
 | ---------------- | -------------------------------------------------------------------- |
 | Provider         | CiscoDevNet/sdwan                                                    |
-| Version          | 0.1.0                                                                |
-| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/0.1.0/docs |
+| Version          | 0.3.3                                                                |
+| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/0.3.3/docs |
 | vManage URL      | https://198.18.128.2                                                 |
 | vManage User     | user1                                                                |
 | vManage Password | C1sco12345                                                           |
 
 ## Step 1: Attach device-template the to router
 
-Your task is to attach a predefined device-template to the router with the required device variables. Use the prepared .csv file in this directory.
+Your task is to attach a predefined device-template to the router with the required device variables.
 
-| Required parameters | Value                                    |
-| ------------------- | ---------------------------------------- |
-| device_template_id  | _$ID from device-template "C8Kv_Branch"_ |
-| file                | device_vars.csv                          |
-| chassis_number      | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
-
-:exclamation: :warning: Use a data source to get the device_template_id for the device-template **"C8Kv_Branch"**
+| Required parameters         | Value                                    |
+| --------------------------- | ---------------------------------------- |
+| device_template_id          | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
+| device_id                   | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
+| system_host_name            | site-11-router-1                         |
+| system_system_ip            | 10.255.255.11                            |
+| system_site-id              | 11                                       |
+| vpn0_if_ipv4_address        | 198.18.150.11/18                         |
+| vpn20_if_ipv4_address       | 172.20.11.1/24                           |
+| dhcp_vlan20_address_pool    | 172.20.11.0/24                           |
+| dhcp_vlan20_default_gateway | 172.20.11.1                              |
 
 ## Step 2: Verification
 

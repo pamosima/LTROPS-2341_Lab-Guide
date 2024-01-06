@@ -1,2 +1,0 @@
-"csv-deviceId","csv-deviceIP","csv-host-name","/20/GigabitEthernet2/interface/ip/address","/20/GigabitEthernet2//dhcp-server/address-pool","/20/GigabitEthernet2//dhcp-server/options/default-gateway","/0/GigabitEthernet1/interface/ip/address","//system/host-name","//system/system-ip","//system/site-id"
-"C8K-5D6F8452-A4F2-1395-3C1A-DDCE642B69C6","10.255.255.14","site-14-router-1","172.20.14.1/24","172.20.14.0/24","172.20.14.1","198.18.150.14/18","site-14-router-1","10.255.255.14","14"
