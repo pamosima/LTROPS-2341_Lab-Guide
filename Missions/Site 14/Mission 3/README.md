@@ -1,106 +1,101 @@
-# Mission 3: Onboard your Access-Point and provision your SSID
+# Mission 3: Add a new VPN to the router and add a new VLAN to the switch.
 
 This mission requires a few different steps:
-- Create SSID
-- Create wireless profile 
-- Provision WLC
-- Claim AP with PnP
-- Provision AP
 
-## Terraform provider
+- Create a new SDWAN VPN feature template and a new SDWAN VPN interface feature template
+- Clone existing SDWAN device template and add the VPN feature, as well as the VPN interface feature template
+- Attach the new SDWAN device template to your router
+- Create a new CLI template on the Catalyst Center
+- Deploy the CLI template to your switch
 
-Use the following terraform provider and make sure to use the specified version.
+## Terraform providers
 
-Specification | Details
-------------- | --- 
-Provider      | cisco-en-programmability/dnacenter
-Version       | :warning: 1.1.2-beta
-Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.1.2-beta/docs
-DNAC URL      | https://dnac.its-best.ch
+Use the following terraform providers and make sure to use the specified version.
 
-## Step 1: Create SSID
+### SDWAN
 
-Required parameters                   | Value
-------------------------------------- | ----------------------------------------
-basic_service_set_client_idle_timeout | 0
-client_exclusion_timeout              | 0
-enable_basic_service_set_max_idle     | true
-enable_broadcast_ssi_d                | true
-enable_client_exclusion               | true
-enable_directed_multicast_service     | true
-enable_fast_lane                      | true
-enable_mac_filtering                  | false
-enable_neighbor_list                  | true
-enable_session_time_out               | true
-fast_transition                       | Adaptive
-mfp_client_protection                 | Optional
-name                                  | Devnet Site-14
-passphrase                            | *$YOUR PASSPHRASE*
-radio_policy                          | Dual band operation (2.4GHz and 5GHz)
-security_level                        | WPA2_PERSONAL
-session_time_out                      | 0
-ssid_name                             | Devnet Site-14
-traffic_type                          | voicedata
+| Specification    | Details                                                              |
+| ---------------- | -------------------------------------------------------------------- |
+| Provider         | CiscoDevNet/sdwan                                                    |
+| Version          | 0.3.3                                                                |
+| Documentation    | https://registry.terraform.io/providers/CiscoDevNet/sdwan/0.3.3/docs |
+| vManage URL      | https://198.18.128.2                                                 |
+| vManage User     | user4                                                                |
+| vManage Password | C1sco12345                                                           |
 
-Navigate to Design -> Network Settings -> Wireless in DNA-C to verify.
+### DNACENTER (Catalyst Center)
 
-## Step 2: Create wireless profile
+| Specification | Details                                                                                     |
+| ------------- | ------------------------------------------------------------------------------------------- |
+| Provider      | cisco-en-programmability/dnacenter                                                          |
+| Version       | 1.1.31-beta                                                                                 |
+| Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.1.31-beta/docs |
+| DNAC URL      | https://198.18.129.100                                                                      |
+| DNAC User     | user4                                                                                       |
+| DNAC Password | C1sco12345                                                                                  |
 
-Required parameters                   | Value
-------------------------------------- | ----------------------------------------
-name                                  | Wireless DevNet Site-14
-sites                                 | Global/DevNet/Site-14
-enable_fabric                         | false
-enable_flex_connect                   | false
-local_to_vlan                         | 1
-interface_name                        | VLAN0020
-name                                  | Devnet Site-14
-type                                  | Enterprise
-wireless_profile_name                 | Wireless DevNet Site-14
+## Step 1: Create a new SDWAN feature templates and assign them to your router
 
-## Step 3: Provision WLC
+Your task is to create a new SDWAN device template with a new VPN feature template and a new SDWAN VPN interface feature template. Then attach it to the router with the required device variables.
 
-Required parameters                   | Value
-------------------------------------- | ----------------------------------------
-device_name                           | C9800.its-best.ch
-managed_aplocations                   | Global/DevNet
-persistbapioutput                     | true
+| Required parameters         | Value                                    |
+| --------------------------- | ---------------------------------------- |
+| device_template_id          | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
+| device_id                   | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
+| system_host_name            | site-14-router-1                         |
+| system_system_ip            | 10.255.255.14                            |
+| system_site-id              | 14                                       |
+| vpn0_if_ipv4_address        | 198.18.150.14/18                         |
+| vpn20_if_ipv4_address       | 172.20.14.1/24                           |
+| dhcp_vlan20_address_pool    | 172.20.14.0/24                           |
+| dhcp_vlan20_default_gateway | 172.20.14.1                              |
+| vpn_id                      | 21                                       |
+| vpn_name                    | 21                                       |
+| vpn21_if_name               | GigabitEthernet2.21                      |
+| vpn21_if_ipv4_address       | 172.21.14.1/24                           |
 
-## Step 4: Claim Access-Point
+## Step 2: Verification
 
-:exclamation: Your **Access-point Serial Number** is **FCW2428P6FU**
+Log into the vManage UI and navigate to Configuration -> Devices.
+Verify if your Router is now successfully onboarded and in vManage mode:
 
-Required parameters                   | Value
-------------------------------------- | ----------------------------------------
-device_id                             | *$PNP Device ID from AP*
-site_id                               | *$Floor ID*
-type                                  | AccessPoint
-rf_profile                            | TYPICAL
+Example Site21:
 
-## Step 5: Provision AP
+<img src=../../img/sd-wan.jpg/>
 
-Your Access-Point has to be successfully onboarded for this step. Please verify in DNAC.
+## Step 3: Create a new CLI template on the Catalyst Center and deploy it to your switch
 
-:exclamation: :warning: Depending on the version - wrap the parameters into a "payload {}". Needed for 1.1.2-beta.
+Your task is to create a new CLI template on the Catalyst Center and deploy it to your switch
 
-Required parameters                   | Value
-------------------------------------- | ----------------------------------------
-device_name                           | site-14-ap-1
-rf_profile                            | TYPICAL
-site_id                               | Global/DevNet/Site-14/14-1/14-1-1
-site_name_hierarchy                   | Global/DevNet/Site-14/14-1/14-1-1
-type                                  | ApWirelessConfiguration
+| Required parameters | Value                              |
+| ------------------- | ---------------------------------- |
+| site_name           | Site-14                            |
+| switch_hostname     | site-14-switch-1                   |
+| device_uuid         | $ID from device_list "hostname.\*" |
 
-## Step 6: Verification
+Please find a simple example of the CLI template blow:
 
-After the successful provisioning of your Access-Point you’re SSID should now be broadcasted.
+```
+vlan 21
+ name Data
+interface range Gig1/0/2-8
+ switchport mode access
+ switchport access vlan 21
+```
 
-Verification:
-- Connect to your SSID with your phone
-- Your phone should have an IP in the range: 172.20.200.0/24
-- You should access the internet via the dCloud DC in London, therefore you should see a Cisco Public ip when you access https://bgp.he.net/.
+## Step 4: Verification
 
+Log into the Catalyst Center UI and navigate to Tools -> Command Runner.
+Select your switch and run the following command:
+
+```
+show vlan
+```
+
+Verify if vlan has been created and if it's assigned to the interfaces Gig1/0/2-8.
+
+<img src=../../img/show_vlan.png/>
 
 <div align="right">
-    [Prev](../Mission 2/README.md)
-</div> 
+  <a href='../Mission 2/README.md'>Prev: Mission 2</a>
+</div>
