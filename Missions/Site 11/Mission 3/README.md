@@ -51,6 +51,7 @@ Your task is to create a new SDWAN device template with a new VPN feature templa
 | dhcp_vlan20_default_gateway | 172.20.11.1                              |
 | vpn_id                      | 21                                       |
 | vpn_name                    | 21                                       |
+| vpn21_if_name               | GigabitEthernet2.21                      |
 | vpn21_if_ipv4_address       | 172.21.11.1/24                           |
 
 ## Step 2: Verification
@@ -66,10 +67,11 @@ Example Site21:
 
 Your task is to create a new CLI template on the Catalyst Center and deploy it to your switch
 
-| Required parameters | Value            |
-| ------------------- | ---------------- |
-| site_name           | Site-11          |
-| switch_hostname     | site-11-switch-1 |
+| Required parameters | Value                              |
+| ------------------- | ---------------------------------- |
+| site_name           | Site-11                            |
+| switch_hostname     | site-11-switch-1                   |
+| device_uuid         | $ID from device_list "hostname.\*" |
 
 Please find a simple example of the CLI template blow:
 
