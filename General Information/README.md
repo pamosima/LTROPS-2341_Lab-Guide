@@ -14,9 +14,17 @@ Beneath you will find:
 
 ### Scenario
 
-In this lab activity, you will learn how to use Terraform to deploy and configure Cisco Enterprise Networking Solutions. In the first task you will configure a new SD-WAN cEdge Router to establish Fabric-Connectivity at your branch. In a second step you will deploy Branch-Switching by onboarding and configuring a Catalyst 9000 Switch.
+In this lab activity, you will learn how to use Terraform to deploy and configure Cisco Enterprise Networking Solutions.
+
+- In the first mission you will configure a new SD-WAN cEdge Router to establish Fabric-Connectivity at your branch.
+
+- In the second mission you will deploy Branch-Switching by onboarding and configuring a Catalyst 9000 Switch.
+
+- In the third mission you will add a new VPN to your SD-WAN cEdge Router and a new VLAN to your Catalyst 9000 Switch.
 
 #### Network Diagram
+
+Your personal site (pod) featuring a router and a switch and is running in Cisco Modeling Labs (CML). The controllers (vManage & Catalyst Center) are shared across five simulated sites.
 
 ![Network Diagram](img/layout.jpg)
 
@@ -36,10 +44,6 @@ In this lab activity, you will learn how to use Terraform to deploy and configur
 | Site 15 | 21  | 172.21.15.0/24 |
 
 ### Networking Site Verification
-
-Your personal site (pod) featuring a router and a switch and is running in Cisco Modeling Labs (CML). The controllers (vManage & Catalyst Center) are shared across five simulated sites.
-
-#### Before You Begin:
 
 Ensure a smooth start to your mission by checking the status of your router and switch. Follow these steps:
 
