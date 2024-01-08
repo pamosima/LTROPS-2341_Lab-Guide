@@ -9,7 +9,8 @@ Upon completion of this lab, you will be able to:
 
 - Configure a Catalyst SD-WAN cEdge Router with Terraform
 - Onboard and configure a Switch with Cisco Catalyst Center with Terraform
-- Add a new VPN to the router and add a new VLAN to the switch
+- Creating and adding a new VPN template to the router
+- Creating and deploying a Catalyst Center Day N template with a new VLAN to the switch
 
 ## Table of Contents
 
