@@ -30,17 +30,24 @@ Your personal site (pod) featuring a router and a switch and is running in Cisco
 
 #### Overlay IP Addressing
 
+##### VPN20
+
 | Site    | VRF | Subnet         |
 | ------- | --- | -------------- |
 | Site 11 | 20  | 172.20.11.0/24 |
-| Site 11 | 21  | 172.21.11.0/24 |
 | Site 12 | 20  | 172.20.12.0/24 |
-| Site 12 | 21  | 172.21.12.0/24 |
 | Site 13 | 20  | 172.20.13.0/24 |
-| Site 13 | 21  | 172.21.13.0/24 |
 | Site 14 | 20  | 172.20.14.0/24 |
-| Site 14 | 21  | 172.21.14.0/24 |
 | Site 15 | 20  | 172.20.15.0/24 |
+
+##### VPN21
+
+| Site    | VRF | Subnet         |
+| ------- | --- | -------------- |
+| Site 11 | 21  | 172.21.11.0/24 |
+| Site 12 | 21  | 172.21.12.0/24 |
+| Site 13 | 21  | 172.21.13.0/24 |
+| Site 14 | 21  | 172.21.14.0/24 |
 | Site 15 | 21  | 172.21.15.0/24 |
 
 ### Networking Site Verification
