@@ -40,6 +40,10 @@ Use Remote Desktop Client Already Installed on Your Laptop:
    4. Tap Save.
 4. Now you can Connect to your Pod (Wkst)
 
+   Your workstation has all the needed tools installed and should look like the print screen below:
+
+   <img src=img/remote-desktop.png>
+
 ### Remote Desktop section
 
 | Site    | IP Address     | Username | Password   |
