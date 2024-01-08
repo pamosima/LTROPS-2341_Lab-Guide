@@ -19,17 +19,43 @@ In this lab activity, you will learn how to use Terraform to deploy and configur
 
 | Site    | VRF | Subnet         |
 | ------- | --- | -------------- |
-| Site 11 | 20  | 172.20.11/0/24 |
-| Site 12 | 20  | 172.20.12/0/24 |
-| Site 13 | 20  | 172.20.13/0/24 |
-| Site 14 | 20  | 172.20.14/0/24 |
-| Site 15 | 20  | 172.20.15/0/24 |
+| Site 11 | 20  | 172.20.11.0/24 |
+| Site 11 | 21  | 172.21.11.0/24 |
+| Site 12 | 20  | 172.20.12.0/24 |
+| Site 12 | 21  | 172.21.12.0/24 |
+| Site 13 | 20  | 172.20.13.0/24 |
+| Site 13 | 21  | 172.21.13.0/24 |
+| Site 14 | 20  | 172.20.14.0/24 |
+| Site 14 | 21  | 172.21.14.0/24 |
+| Site 15 | 20  | 172.20.15.0/24 |
+| Site 15 | 21  | 172.21.15.0/24 |
 
-#### Working directories
+### Networking Site Verification
 
-You should have at least three different working directories, one for each mission. In each directory you shall create a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
+Your personal site (pod) featuring a router and a switch and is running in Cisco Modeling Labs (CML). The controllers (vManage & Catalyst Center) are shared across five simulated sites.
 
-<img src=img/work_dirs.jpg width=30%>
+#### Before You Begin:
+
+Ensure a smooth start to your mission by checking the status of your router and switch. Follow these steps:
+
+1. Login to CML:
+
+   Open your web browser and navigate to [https://198.18.130.140/](https://198.18.130.140/).
+   Use the credentials specific to your assigned site from the table below:
+
+   | Site    | User  | Password   |
+   | ------- | ----- | ---------- |
+   | Site 11 | user1 | C1sco12345 |
+   | Site 12 | user2 | C1sco12345 |
+   | Site 13 | user3 | C1sco12345 |
+   | Site 14 | user4 | C1sco12345 |
+   | Site 15 | user5 | C1sco12345 |
+
+2. Verify Router and Switch:
+   Once logged in, confirm the status of your router and switch.
+   A green tick, as shown in the example image below, indicates that both devices are up and running.
+
+   <img src=img/cml-site.png width=30%>
 
 ### Basic Terraform commands
 
@@ -86,6 +112,12 @@ In Terraform, both resources and data sources are used to represent and interact
 - Terraform Resource: A Terraform resource represents a provisioned infrastructure component, such as a virtual machine, a database, or a network resource. Resources are declared and managed within your Terraform configuration files using a resource block. When you apply your Terraform configuration, resources are created, updated, or destroyed to match the desired state defined in your configuration.
 - Terraform Data Source: A Terraform data source allows you to fetch information or access existing resources that are managed outside of Terraform. Data sources provide a way to query and retrieve information from external systems, such as cloud providers or other APIs, and make that information available for use within your Terraform configuration.
   To summarize, resources represent the infrastructure components you manage and provision with Terraform, while data sources allow you to fetch information to use within your Terraform configuration. Resources are created, updated, or destroyed by Terraform, while data sources provide read-only access to external data.
+
+### Working directories
+
+You should have at least three different working directories, one for each mission. In each directory you should have a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
+
+<img src=img/work_dirs.png width=30%>
 
 <div align="right">
   <a href='../How to get started/README.md'>Next: How to get started</a>
