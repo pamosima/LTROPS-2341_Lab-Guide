@@ -133,7 +133,7 @@ In Terraform, both resources and data sources are used to represent and interact
 
 You should have at least three different working directories, one for each mission. In each directory you should have a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
 
-<img src=img/work_dirs.png width=30%>
+<img src=img/work_dirs.png width=20%>
 
 <div align="right">
   <a href='../How to get started/README.md'>Next: How to get started</a>
