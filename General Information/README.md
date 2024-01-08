@@ -5,7 +5,12 @@
 
 ## General Information
 
-Beneath you will find [general information regarding the lab](#scenario) and [basic explanation about terraform](#basic-terraform-commands).
+Beneath you will find:
+
+- [general information regarding the lab](#scenario)
+- [steps to verify the status of your lab](#networking-site-verification)
+- [basic explanation about terraform](#basic-terraform-commands)
+- [recommended working directories](#working-directories)
 
 ### Scenario
 
