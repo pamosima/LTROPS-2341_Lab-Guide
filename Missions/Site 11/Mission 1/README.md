@@ -26,7 +26,7 @@ Your task is to attach a predefined device-template to the router with the requi
 | device_id                   | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
 | system_host_name            | site-11-router-1                         |
 | system_system_ip            | 10.255.255.11                            |
-| system_site-id              | 11                                       |
+| system_site_id              | 11                                       |
 | vpn0_if_ipv4_address        | 198.18.150.11/18                         |
 | vpn20_if_ipv4_address       | 172.20.11.1/24                           |
 | dhcp_vlan20_address_pool    | 172.20.11.0/24                           |
