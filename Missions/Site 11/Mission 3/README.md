@@ -40,8 +40,8 @@ Your task is to create a new SDWAN device template with a new VPN feature templa
 
 | Required parameters         | Value                                    |
 | --------------------------- | ---------------------------------------- |
-| device_template_id          | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
-| device_id                   | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
+| id (Device Template ID)     | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
+| id (Device ID)              | C8K-A0C346F4-1B42-C170-9D51-0AE31D6F2450 |
 | system_host_name            | site-11-router-1                         |
 | system_system_ip            | 10.255.255.11                            |
 | system_site-id              | 11                                       |

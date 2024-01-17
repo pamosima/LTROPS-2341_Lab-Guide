@@ -22,8 +22,8 @@ Your task is to attach a predefined device-template to the router with the requi
 
 | Required parameters         | Value                                    |
 | --------------------------- | ---------------------------------------- |
-| device_template_id          | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
-| device_id                   | C8K-C74E1F90-C146-12BB-9B15-2542E9D20884 |
+| id (Device Template ID)     | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
+| id (Device ID)              | C8K-C74E1F90-C146-12BB-9B15-2542E9D20884 |
 | system_host_name            | site-13-router-1                         |
 | system_system_ip            | 10.255.255.13                            |
 | system_site_id              | 13                                       |

@@ -20,16 +20,17 @@ Use the following terraform provider and make sure to use the specified version.
 
 Your task is to attach a predefined device-template to the router with the required device variables.
 
-| Required parameters         | Value                                |
-| --------------------------- | ------------------------------------ |
-| device_template_id          | 6cff893d-d4ec-48fa-aa45-f50c565c1e61 |
-| system_host_name            | site-12-router-1                     |
-| system_system_ip            | 10.255.255.12                        |
-| system_site_id              | 12                                   |
-| vpn0_if_ipv4_address        | 198.18.150.12/18                     |
-| vpn20_if_ipv4_address       | 172.20.12.1/24                       |
-| dhcp_vlan20_address_pool    | 172.20.12.0/24                       |
-| dhcp_vlan20_default_gateway | 172.20.12.1                          |
+| Required parameters         | Value                                    |
+| --------------------------- | ---------------------------------------- |
+| id (Device Template ID)     | 6cff893d-d4ec-48fa-aa45-f50c565c1e61     |
+| id (Device ID)              | C8K-AA867625-D3AE-8819-AAC6-75BD774818FB |
+| system_host_name            | site-12-router-1                         |
+| system_system_ip            | 10.255.255.12                            |
+| system_site_id              | 12                                       |
+| vpn0_if_ipv4_address        | 198.18.150.12/18                         |
+| vpn20_if_ipv4_address       | 172.20.12.1/24                           |
+| dhcp_vlan20_address_pool    | 172.20.12.0/24                           |
+| dhcp_vlan20_default_gateway | 172.20.12.1                              |
 
 ## Step 2: Verification
 
