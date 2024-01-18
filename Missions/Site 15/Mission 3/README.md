@@ -1,12 +1,14 @@
 # Mission 3: Add a new VPN to the router and add a new VLAN to the switch.
 
-This mission requires a few different steps:
+This mission is divided into two tasks and requires a few different steps:
 
-- Create a new SDWAN VPN feature template and a new SDWAN VPN interface feature template
-- Clone existing SDWAN device template and add the VPN feature, as well as the VPN interface feature template
-- Attach the new SDWAN device template to your router
-- Create a new CLI template on the Catalyst Center
-- Deploy the CLI template to your switch
+- [Task 1: Create the needed SDWAN feature templates and assign them to your router](#task-1-create-the-needed-sdwan-feature-templates-and-assign-them-to-your-router)
+  - Create a new SDWAN VPN feature template and a new SDWAN VPN interface feature template
+  - Clone existing SDWAN device template and add the VPN feature, as well as the VPN interface feature template
+  - Attach the new SDWAN device template to your router
+- [Task 2: Create a new CLI template on the Catalyst Center and deploy it to your switch](#task-2-create-a-new-cli-template-on-the-catalyst-center-and-deploy-it-to-your-switch)
+  - Create a new CLI template on the Catalyst Center
+  - Deploy the CLI template to your switch
 
 ## Terraform providers
 
