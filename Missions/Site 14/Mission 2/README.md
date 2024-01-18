@@ -53,7 +53,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 Log in to Catalyst Center and verify your newly created site under Design -> Network Hierarchy.
 Example Site21:
 
-<img src=../../img/network_hierarchy.jpg/ width=30%>
+<img src=../../img/network_hierarchy.png/ width=30%>
 
 ## Step 2: Onboard your Switch
 
@@ -87,7 +87,7 @@ data "dnacenter_configuration_template" "pnp_template" {
 
 Verify that your Switch got claimed, configured and assigned to your Site by navigating to Provision -> Inventory and choose your site in the Catalyst Center UI:
 
-<img src=../../img/site-switch.jpg/ width=80%>
+<img src=../../img/site-switch.png/ width=80%>
 
 <div align="right">
   <a href='../Mission 1/README.md'>Prev: Mission 1</a> - <a href='../Mission 3/README.md'>Next: Mission 3</a>

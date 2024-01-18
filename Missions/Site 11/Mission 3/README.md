@@ -34,9 +34,77 @@ Use the following terraform providers and make sure to use the specified version
 | DNAC User     | user1                                                                                       |
 | DNAC Password | C1sco12345                                                                                  |
 
-## Step 1: Create a new SDWAN feature templates and assign them to your router
+## Task 1: Create the needed SDWAN feature templates and assign them to your router
 
-Your task is to create a new SDWAN device template with a new VPN feature template and a new SDWAN VPN interface feature template. Then attach it to the router with the required device variables.
+Your first task is to create a new SDWAN device template with a new VPN feature template and a new SDWAN VPN interface feature template. Then attach this new SDWAN device feature template to the router.
+
+### Step 1: Create a new SDWAN VPN feature template
+
+| Required parameters | Value         |
+| ------------------- | ------------- |
+| name                | site-11_vpn21 |
+| description         | site-11_vpn21 |
+| device_types        | ["C8000v"]    |
+| vpn_id              | 21            |
+| vpn_name            | 21            |
+
+### Step 2: Create a new SDWAN VPN interface feature template
+
+| Required parameters     | Value                 |
+| ----------------------- | --------------------- |
+| name                    | site-11_vpn21-eth     |
+| description             | site-11_vpn21-eth     |
+| device_types            | ["C8000v"]            |
+| shutdown                | false                 |
+| interface_name_variable | vpn21_if_name         |
+| address_variable        | vpn21_if_ipv4_address |
+
+### Step 3: Create a new SDWAN device feature template
+
+| Required parameters | Value                                                  |
+| ------------------- | ------------------------------------------------------ |
+| name                | site-11                                                |
+| description         | site-11                                                |
+| device_type         | C8000v                                                 |
+| device_role         | SDWAN Edge                                             |
+| general_templates   | a list of the existing templates and the new templates |
+
+### Step 4: Assign the new SDWAN device feature template to your router## Task 1: Create the needed SDWAN feature templates and assign them to your router
+
+Your first task is to create a new SDWAN device template with a new VPN feature template and a new SDWAN VPN interface feature template. Then attach this new SDWAN device feature template to the router.
+
+### Step 1: Create a new SDWAN VPN feature template
+
+| Required parameters | Value         |
+| ------------------- | ------------- |
+| name                | site-11_vpn21 |
+| description         | site-11_vpn21 |
+| device_types        | ["C8000v"]    |
+| vpn_id              | 21            |
+| vpn_name            | 21            |
+
+### Step 2: Create a new SDWAN VPN interface feature template
+
+| Required parameters     | Value                 |
+| ----------------------- | --------------------- |
+| name                    | site-11_vpn21-eth     |
+| description             | site-11_vpn21-eth     |
+| device_types            | ["C8000v"]            |
+| shutdown                | false                 |
+| interface_name_variable | vpn21_if_name         |
+| address_variable        | vpn21_if_ipv4_address |
+
+### Step 3: Create a new SDWAN device feature template
+
+| Required parameters | Value                                                  |
+| ------------------- | ------------------------------------------------------ |
+| name                | site-11                                                |
+| description         | site-11                                                |
+| device_type         | C8000v                                                 |
+| device_role         | SDWAN Edge                                             |
+| general_templates   | a list of the existing templates and the new templates |
+
+### Step 4: Assign the new SDWAN device feature template to your router
 
 | Required parameters         | Value                                    |
 | --------------------------- | ---------------------------------------- |
@@ -54,26 +122,34 @@ Your task is to create a new SDWAN device template with a new VPN feature templa
 | vpn21_if_name               | GigabitEthernet2.21                      |
 | vpn21_if_ipv4_address       | 172.21.11.1/24                           |
 
-## Step 2: Verification
+### Step 5: Verification
 
 Log into the vManage UI and navigate to Configuration -> Devices.
 Verify if your Router is now successfully onboarded and in vManage mode:
 
-Example Site21:
+Example Site-11:
 
-<img src=../../img/sd-wan.jpg/>
+<img src=../../img/sd-wan_mission-3.png/>
 
-## Step 3: Create a new CLI template on the Catalyst Center and deploy it to your switch
+## Task 1: Create a new CLI template on the Catalyst Center and deploy it to your switch
 
 Your task is to create a new CLI template on the Catalyst Center and deploy it to your switch
 
-| Required parameters | Value                              |
-| ------------------- | ---------------------------------- |
-| site_name           | Site-11                            |
-| switch_hostname     | site-11-switch-1                   |
-| device_uuid         | $ID from device_list "hostname.\*" |
+### Step 1: Create a configuration template project
 
-Please find a simple example of the CLI template blow:
+| Required parameters | Value           |
+| ------------------- | --------------- |
+| name                | Site-11_Project |
+
+### Step 2: Create a configuration template
+
+| Required parameters | Value                                                 |
+| ------------------- | ----------------------------------------------------- |
+| name                | Site-11_DayN                                          |
+| project_id          | $ID from the created template project                 |
+| software_type       | IOS                                                   |
+| device_types        | Switches and Hubs                                     |
+| template_content    | Please find a simple example of the CLI template blow |
 
 ```
 vlan 21
@@ -83,7 +159,25 @@ interface range Gig1/0/2-8
  switchport access vlan 21
 ```
 
-## Step 4: Verification
+### Step 3: Create a new version of the configuration template
+
+| Required parameters | Value                                       |
+| ------------------- | ------------------------------------------- |
+| template_id         | $ID from the created configuration template |
+
+### Step 4: Deploy the template
+
+| Required parameters   | Value                                       |
+| --------------------- | ------------------------------------------- |
+| hostname              | site-11-switch-1                            |
+| force_push_template   | false                                       |
+| is_composite          | false                                       |
+| id                    | $ID from device_list "hostname.\*"          |
+| type                  | MANAGED_DEVICE_UUID                         |
+| versioned_template_id | $ID from the created configuration template |
+| template_id           | $ID from the created configuration template |
+
+## Step 5: Verification
 
 Log into the Catalyst Center UI and navigate to Tools -> Command Runner.
 Select your switch and run the following command:

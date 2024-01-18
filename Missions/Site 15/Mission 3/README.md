@@ -66,7 +66,7 @@ Your first task is to create a new SDWAN device template with a new VPN feature 
 | name                | site-15                                                |
 | description         | site-15                                                |
 | device_type         | C8000v                                                 |
-| device_role         | C8000v                                                 |
+| device_role         | SDWAN Edge                                             |
 | general_templates   | a list of the existing templates and the new templates |
 
 ### Step 4: Assign the new SDWAN device feature template to your router
@@ -92,9 +92,9 @@ Your first task is to create a new SDWAN device template with a new VPN feature 
 Log into the vManage UI and navigate to Configuration -> Devices.
 Verify if your Router is now successfully onboarded and in vManage mode:
 
-Example Site21:
+Example Site-11:
 
-<img src=../../img/sd-wan.jpg/>
+<img src=../../img/sd-wan_mission-3.png/>
 
 ## Task 1: Create a new CLI template on the Catalyst Center and deploy it to your switch
 

@@ -39,7 +39,7 @@ Verify if your Router is now successfully onboarded and in vManage mode:
 
 Example Site21:
 
-<img src=../../img/sd-wan.jpg/>
+<img src=../../img/sd-wan_mission-1.png/>
 
 <div align="right">
   <a href='../Mission 2/README.md'>Next: Mission 2</a>
