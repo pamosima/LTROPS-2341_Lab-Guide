@@ -51,7 +51,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 | width               | 100                             |
 
 Log in to Catalyst Center and verify your newly created site under Design -> Network Hierarchy.
-Example Site21:
+Example Site-11:
 
 <img src=../../img/network_hierarchy.png/ width=30%>
 
