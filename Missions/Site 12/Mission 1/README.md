@@ -37,7 +37,7 @@ Your task is to attach a predefined device-template to the router with the requi
 Log into the vManage UI and navigate to Configuration -> Devices.
 Verify if your Router is now successfully onboarded and in vManage mode:
 
-Example Site21:
+Example Site-11:
 
 <img src=../../img/sd-wan_mission-1.png/>
 
