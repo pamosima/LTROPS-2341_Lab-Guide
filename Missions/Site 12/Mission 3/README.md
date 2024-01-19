@@ -98,7 +98,7 @@ Example Site-11:
 
 <img src=../../img/sd-wan_mission-3.png/>
 
-## Task 1: Create a new CLI template on the Catalyst Center and deploy it to your switch
+## Task 2: Create a new CLI template on the Catalyst Center and deploy it to your switch
 
 Your task is to create a new CLI template on the Catalyst Center and deploy it to your switch
 
