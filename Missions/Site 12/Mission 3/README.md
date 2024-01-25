@@ -157,6 +157,14 @@ Verify if vlan has been created and if it's assigned to the interfaces Gig1/0/2-
 
 <img src=../../img/show_vlan.png/>
 
+---
+
 <div align="right">
   <a href='../Mission 2/README.md'>Prev: Mission 2</a>
+</div>
+
+---
+
+<div align="center">
+ Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 3/README.md' target="_blank">hint</a> to help you out?
 </div>
