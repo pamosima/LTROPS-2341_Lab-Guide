@@ -166,5 +166,5 @@ Verify if vlan has been created and if it's assigned to the interfaces Gig1/0/2-
 ---
 
 <div align="center">
- Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 3/README.md' target="_blank">hint</a> to help you out?
+ Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 3/README.md' target="_blank" rel="noreferrer noopener">hint</a> to help you out?
 </div>
