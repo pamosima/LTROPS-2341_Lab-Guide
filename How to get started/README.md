@@ -6,6 +6,7 @@ Beneath you will find information how to:
 
 - [Connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect)
 - [Working with your pod (Wkst)](#connect-to-your-pod-wkst-using-remote-desktop-client)
+- [Networking Site Verification](#networking-site-verification)
 
 ### Connect Laptop to dCloud Session Using Cisco AnyConnect
 
@@ -53,6 +54,29 @@ Use Remote Desktop Client Already Installed on Your Laptop:
 | Site 13 | 198.18.133.143 | user3    | C1sco12345 |
 | Site 14 | 198.18.133.144 | user4    | C1sco12345 |
 | Site 15 | 198.18.133.145 | user5    | C1sco12345 |
+
+### Networking Site Verification
+
+Ensure a smooth start to your mission by checking the status of your router and switch. Follow these steps:
+
+1. Login to CML:
+
+   Open your web browser on your workstation and navigate to [https://198.18.130.140/](https://198.18.130.140/).
+   Use the credentials specific to your assigned site from the table below:
+
+   | Site    | User  | Password   |
+   | ------- | ----- | ---------- |
+   | Site 11 | user1 | C1sco12345 |
+   | Site 12 | user2 | C1sco12345 |
+   | Site 13 | user3 | C1sco12345 |
+   | Site 14 | user4 | C1sco12345 |
+   | Site 15 | user5 | C1sco12345 |
+
+2. Verify Router and Switch:
+   Once logged in, confirm the status of your router and switch.
+   A green tick, as shown in the example image below, indicates that both devices are up and running.
+
+   <img src=img/cml-site.png width=30%>
 
 <div align="right">
   <a href='../General Information/README.md'>Prev: General Information</a> - <a href='../Missions/README.md'>Next: Missions</a>
