@@ -92,6 +92,14 @@ Verify that your Switch got claimed, configured and assigned to your Site by nav
 
 <img src=../../img/site-switch.png/ width=80%>
 
+---
+
 <div align="right">
   <a href='../Mission 1/README.md'>Prev: Mission 1</a> - <a href='../Mission 3/README.md'>Next: Mission 3</a>
+</div>
+
+---
+
+<div align="center">
+ Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 2/README.md' target="_blank">hint</a> to help you out?
 </div>
