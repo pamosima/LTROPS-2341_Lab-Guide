@@ -101,5 +101,5 @@ Verify that your Switch got claimed, configured and assigned to your Site by nav
 ---
 
 <div align="center">
- Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 1/README.md' target="_blank">hint</a> to help you out?
+ Are you feeling stuck? Would you like a <a href='../../../Hints/1/Mission 2/README.md' target="_blank">hint</a> to help you out?
 </div>
