@@ -128,6 +128,8 @@ interface range Gig1/0/2-8
 
 ### Step 3: Create a new version of the configuration template
 
+This step is crucial because the template must be "committed" in the Catalyst Center before it can be deployed to the switch.
+
 | Required parameters | Value                                       |
 | ------------------- | ------------------------------------------- |
 | template_id         | $ID from the created configuration template |
