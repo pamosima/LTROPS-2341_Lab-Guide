@@ -7,10 +7,9 @@
 
 Beneath you will find:
 
-- [general information regarding the lab](#scenario)
-- [steps to verify the status of your lab](#networking-site-verification)
-- [basic explanation about terraform](#basic-terraform-commands)
-- [recommended working directories](#working-directories)
+- [General information regarding the lab](#scenario)
+- [Lab Overview](#lab-overview)
+- [Network Diagram](#network-diagram)
 
 ### Scenario
 
@@ -21,6 +20,12 @@ In this lab activity, you will learn how to use Terraform to deploy and configur
 - In the second mission you will deploy Branch-Switching by onboarding and configuring a Catalyst 9000 Switch.
 
 - In the third mission you will add a new VPN to your SD-WAN cEdge Router and a new VLAN to your Catalyst 9000 Switch.
+
+#### Lab Overview
+
+The lab is accessable via AnyConnect (Secure Connect Client). For each pod there is a workstation (Wkst-1 to Wkst-5) with the needed tools (like VS Code, Terraform, and Chrome) installed.
+
+![Lab Overview](img/lab-overview.png)
 
 #### Network Diagram
 
