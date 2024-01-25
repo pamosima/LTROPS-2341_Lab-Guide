@@ -67,8 +67,8 @@ Your first task is to create a new SDWAN device template with a new VPN feature 
 | ------------------- | ------------------------------------------------------ |
 | name                | site-12                                                |
 | description         | site-12                                                |
-| device_type         | C8000v                                                 |
-| device_role         | SDWAN Edge                                             |
+| device_type         | vedge-C8000V                                           |
+| device_role         | sdwan-edge                                             |
 | general_templates   | a list of the existing templates and the new templates |
 
 ### Step 4: Assign the new SDWAN device feature template to your router
