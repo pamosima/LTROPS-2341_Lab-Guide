@@ -1,11 +1,11 @@
 # Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
-:warning:
-:exclamation: To get started with your missions, open the <a href='../Missions/README.md'>README.md</a> in the Missions directory.
-
 ## How to get started
 
-Beneath you will find information how to [connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect) and [working with your pod (Wkst)](#connect-to-your-pod-wkst-using-remote-desktop-client).
+Beneath you will find information how to:
+
+- [Connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect)
+- [Working with your pod (Wkst)](#connect-to-your-pod-wkst-using-remote-desktop-client)
 
 ### Connect Laptop to dCloud Session Using Cisco AnyConnect
 
@@ -44,7 +44,7 @@ Use Remote Desktop Client Already Installed on Your Laptop:
 
    <img src=img/remote-desktop.png>
 
-### Remote Desktop section
+#### Remote Desktop section
 
 | Site    | IP Address     | Username | Password   |
 | ------- | -------------- | -------- | ---------- |
