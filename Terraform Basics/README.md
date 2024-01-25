@@ -1,8 +1,16 @@
 # Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
-## Basic Terraform commands
+## Terraform Basics
 
-### Terraform Init
+Beneath you will find information on:
+
+- [Terraform Commands](#terraform-commands)
+- [Resources and Data sources](#resources-and-data-sources)
+- [Working directories](#working-directories)
+
+### Terraform Commands
+
+#### Terraform Init
 
 ```bash
 terraform init
@@ -16,7 +24,7 @@ The command "terraform init" is used to initialize a working directory that cont
 - Dependency Resolution
   By running "terraform init" before executing other Terraform commands, you ensure that your environment is properly set up, dependencies are resolved, and the necessary plugins are available. It's a crucial step to prepare your Terraform workspace for infrastructure provisioning and management.
 
-### Terraform plan
+#### Terraform plan
 
 ```bash
 terraform plan -out "planfile"
@@ -29,7 +37,7 @@ The "terraform plan -out" command in Terraform is used to generate an execution 
   "planfile"), Terraform saves the generated execution plan to the specified file. The planfile contains detailed information about the resources to be created, modified, or destroyed, as well as any associated dependencies or relationships.
   Preventing Accidental Changes: Saving the execution plan to a planfile provides an additional layer of safety when applying changes. Before applying the plan, you can review the planfile to ensure that the proposed changes align with your intentions and do not have any unintended consequences. This helps prevent accidental or undesired modifications to your infrastructure.
 
-### Terraform Apply
+#### Terraform Apply
 
 ```bash
 terraform apply "planfile"
@@ -56,7 +64,7 @@ The terraform destroy command is used to destroy the infrastructure that has bee
 - Updates the Terraform state
   It's crucial to exercise caution when using terraform destroy as it permanently removes resources and can result in data loss. It's recommended to take backups and thoroughly review the destruction plan before executing the command.
 
-#### Resource and Data source
+### Resources and Data sources
 
 In Terraform, both resources and data sources are used to represent and interact with infrastructure components, but they serve different purposes and have distinct behaviors.
 
@@ -64,7 +72,7 @@ In Terraform, both resources and data sources are used to represent and interact
 - Terraform Data Source: A Terraform data source allows you to fetch information or access existing resources that are managed outside of Terraform. Data sources provide a way to query and retrieve information from external systems, such as cloud providers or other APIs, and make that information available for use within your Terraform configuration.
   To summarize, resources represent the infrastructure components you manage and provision with Terraform, while data sources allow you to fetch information to use within your Terraform configuration. Resources are created, updated, or destroyed by Terraform, while data sources provide read-only access to external data.
 
-#### Working directories
+### Working directories
 
 You should have at least three different working directories, one for each mission. In each directory you should have a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
 
