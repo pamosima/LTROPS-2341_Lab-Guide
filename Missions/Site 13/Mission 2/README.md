@@ -28,6 +28,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 | ------------------- | ------------------ |
 | name                | Site-13            |
 | parent_name         | Global/LTROPS-2341 |
+| type                | area               |
 
 ### Step 1b: Create a building
 
@@ -38,6 +39,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 | address             | Richtistrasse 7, 8304 Wallisellen, Switzerland |
 | latitude            | 47.409871                                      |
 | longitude           | 8.590509                                       |
+| type                | building                                       |
 
 ### Step 1c: Create a floor
 
@@ -49,6 +51,7 @@ Create a subarea, building and floor using Terraform with your Site-specific val
 | height              | 100                             |
 | length              | 100                             |
 | width               | 100                             |
+| type                | floor                           |
 
 Log in to Catalyst Center and verify your newly created site under Design -> Network Hierarchy.
 Example Site-11:
