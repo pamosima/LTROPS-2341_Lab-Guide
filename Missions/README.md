@@ -18,5 +18,5 @@ Beneath you will find information regarding your missions.
 | Site 15 | <a href='./Site 15/Mission 1/README.md'>README.md</a> | <a href='./Site 15/Mission 2/README.md'>README.md</a> | <a href='./Site 15/Mission 3/README.md'>README.md</a> |
 
 <div align="right">
-  <a href='../Terraform Basics/README.md'>Back: Basic Terraform commands</a> - <a href='../How to get started/README.md'>Prev: How to get started</a>
+  <a href='../Terraform Basics/README.md'>Back: Terraform Basics</a> - <a href='../How to get started/README.md'>Prev: How to get started</a>
 </div>
