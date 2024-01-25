@@ -10,6 +10,13 @@ Beneath you will find information on:
 
 ### Terraform Commands
 
+The most used Terraform Commands are:
+
+- [Terraform Init](#terraform-init)
+- [Terraform Plan](#terraform-plan)
+- [Terraform Apply](#terraform-apply)
+- [Terraform Destroy](#terraform-destroy)
+
 #### Terraform Init
 
 ```bash
@@ -24,7 +31,7 @@ The command "terraform init" is used to initialize a working directory that cont
 - Dependency Resolution
   By running "terraform init" before executing other Terraform commands, you ensure that your environment is properly set up, dependencies are resolved, and the necessary plugins are available. It's a crucial step to prepare your Terraform workspace for infrastructure provisioning and management.
 
-#### Terraform plan
+#### Terraform Plan
 
 ```bash
 terraform plan -out "planfile"
