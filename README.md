@@ -13,6 +13,7 @@ Upon completion of this lab, you will be able to:
 
 - <a href='./General Information/README.md'>General Information</a>
 - <a href='./How to get started/README.md'>How to get started</a>
+- <a href='./Terraform Basics/README.md'>Basic Terraform commands</a>
 - <a href='./Missions/README.md'>Missions</a>
 
 ## Disclaimer

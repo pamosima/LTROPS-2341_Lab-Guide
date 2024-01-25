@@ -1,4 +1,6 @@
-m commands
+# Basic Terraform commands
+
+## Terraform Init
 
 ```bash
 terraform init
@@ -12,6 +14,8 @@ The command "terraform init" is used to initialize a working directory that cont
 - Dependency Resolution
   By running "terraform init" before executing other Terraform commands, you ensure that your environment is properly set up, dependencies are resolved, and the necessary plugins are available. It's a crucial step to prepare your Terraform workspace for infrastructure provisioning and management.
 
+## Terraform plan
+
 ```bash
 terraform plan -out "planfile"
 ```
@@ -22,6 +26,8 @@ The "terraform plan -out" command in Terraform is used to generate an execution 
 - Planfile Creation: By specifying the "-out" flag followed by a filename (e.g.,
   "planfile"), Terraform saves the generated execution plan to the specified file. The planfile contains detailed information about the resources to be created, modified, or destroyed, as well as any associated dependencies or relationships.
   Preventing Accidental Changes: Saving the execution plan to a planfile provides an additional layer of safety when applying changes. Before applying the plan, you can review the planfile to ensure that the proposed changes align with your intentions and do not have any unintended consequences. This helps prevent accidental or undesired modifications to your infrastructure.
+
+## Terraform Apply
 
 ```bash
 terraform apply "planfile"
@@ -59,3 +65,7 @@ In Terraform, both resources and data sources are used to represent and interact
 You should have at least three different working directories, one for each mission. In each directory you should have a main.tf file where you will write your terraform code. If you’re familiar with Terraform you could also work with modules and use your own structure – else the easiest way is to use this simple approach:
 
 <img src=img/work_dirs.png width=20%>
+
+<div align="right">
+  <a href='../How to get started/README.md'>Prev: How to get started</a> - <a href='../Missions/README.md'>Next: Missions</a>
+</div>
