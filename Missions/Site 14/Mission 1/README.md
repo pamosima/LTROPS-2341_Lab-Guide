@@ -42,5 +42,5 @@ Example Site-11:
 <img src=../../img/sd-wan_mission-1.png/>
 
 <div align="right">
-  <a href='../Mission 2/README.md'>Next: Mission 2</a>
+  <a href='../Missions/README.md'>Next: Missions</a> - <a href='../Mission 2/README.md'>Next: Mission 2</a>
 </div>
