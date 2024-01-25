@@ -4,11 +4,11 @@
 
 Beneath you will find information how to:
 
-- [Connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect)
+- [Connect to the lab](#connect-laptop-to-dcloud-session-using-cisco-anyconnect-cisco-secure-client)
 - [Working with your pod (Wkst)](#connect-to-your-pod-wkst-using-remote-desktop-client)
 - [Networking Site Verification](#networking-site-verification)
 
-### Connect Laptop to dCloud Session Using Cisco AnyConnect
+### Connect Laptop to dCloud Session Using Cisco AnyConnect (Cisco Secure Client)
 
 #### Use Cisco AnyConnect Client Already Installed on Your Laptop
 
@@ -24,6 +24,8 @@ To use the Cisco AnyConnect client already installed on your laptop:
 6. Click Accept on the window confirming your connection.
 7. When connected to your AnyConnect VPN session, the AnyConnect VPN icon is displayed in the system tray (Windows).
 8. To view connection details or to disconnect, click the AnyConnect VPN icon and then choose Disconnect.
+
+<img src=img/cisco-secure-client.png>
 
 ### Connect to your Pod (Wkst) Using Remote Desktop Client
 
