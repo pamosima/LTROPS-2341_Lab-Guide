@@ -1,8 +1,5 @@
 # Infrastructure as Code for Cisco Catalyst Center and Catalyst SD-WAN Manager with Terraform - LTROPS-2341
 
-:warning:
-:exclamation: To get started with your missions, open the <a href='../Missions/README.md'>README.md</a> in the Missions directory.
-
 ## General Information
 
 Beneath you will find:
@@ -21,7 +18,7 @@ In this lab activity, you will learn how to use Terraform to deploy and configur
 
 - In the third mission you will add a new VPN to your SD-WAN cEdge Router and a new VLAN to your Catalyst 9000 Switch.
 
-#### Lab Overview
+### Lab Overview
 
 The lab is accessable via AnyConnect (Secure Connect Client). For each pod there is a workstation (Wkst-1 to Wkst-5) with the needed tools (like VS Code, Terraform, and Chrome) installed.
 
