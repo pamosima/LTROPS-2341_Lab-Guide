@@ -41,6 +41,14 @@ Example Site-11:
 
 <img src=../../img/sd-wan_mission-1.png/>
 
+---
+
 <div align="right">
-  <a href='../Missions/README.md'>Back: Mission Overview</a> - <a href='../Mission 2/README.md'>Next: Mission 2</a>
+  <a href='../Missions/README.md'>Prev: Mission Overview</a> - <a href='../Mission 2/README.md'>Next: Mission 2</a>
+</div>
+
+---
+
+<div align="center">
+ Are you feeling stuck? Would you like a <a href='../Hints/1/Mission 1/README.md' target="_blank">hint</a> to help you out?
 </div>
