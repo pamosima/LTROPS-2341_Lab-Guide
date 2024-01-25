@@ -11,7 +11,7 @@ In this mission you first deploy your Site in Catalyst Center and then onboard y
 | ------------- | ------------------------------------------------------------------------------------------- |
 | Provider      | cisco-en-programmability/dnacenter                                                          |
 | Version       | 1.1.31-beta                                                                                 |
-| Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.0.12-beta/docs |
+| Documentation | https://registry.terraform.io/providers/cisco-en-programmability/dnacenter/1.1.31-beta/docs |
 | DNAC URL      | https://198.18.129.100                                                                      |
 | DNAC User     | user5                                                                                       |
 | DNAC Password | C1sco12345                                                                                  |
