@@ -85,6 +85,10 @@ You should have at least three different working directories, one for each missi
 
 <img src=img/work_dirs.png width=20%>
 
+---
+
 <div align="right">
   <a href='../How to get started/README.md'>Prev: How to get started</a> - <a href='../Missions/README.md'>Next: Missions</a>
 </div>
+
+---

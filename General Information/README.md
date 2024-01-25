@@ -52,6 +52,10 @@ Your personal site (pod) featuring a router and a switch and is running in Cisco
 | Site 14 | 21  | 172.21.14.0/24 |
 | Site 15 | 21  | 172.21.15.0/24 |
 
+---
+
 <div align="right">
   <a href='../README.md'>Prev: Home</a> - <a href='../How to get started/README.md'>Next: How to get started</a>
 </div>
+
+---

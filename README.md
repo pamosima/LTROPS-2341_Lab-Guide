@@ -20,6 +20,10 @@ Upon completion of this lab, you will be able to:
 
 This training document is to familiarize with Terraform used on Cisco Enterprise Networking Solutions. Although the lab design and configuration examples could be used as a reference, it’s not a real design, thus not all recommended features are used, or enabled optimally. For the design related questions please contact your representative at Cisco, or a Cisco partner.
 
+---
+
 <div align="right">
   <a href='./General Information/README.md'>Next: General Information</a>
 </div>
+
+---

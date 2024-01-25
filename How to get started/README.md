@@ -80,6 +80,10 @@ Ensure a smooth start to your mission by checking the status of your router and 
 
    <img src=img/cml-site.png width=30%>
 
+---
+
 <div align="right">
   <a href='../General Information/README.md'>Prev: General Information</a> - <a href='../Terraform Basics/README.md'>Next: Terraform Basics</a>
 </div>
+
+---
