@@ -44,7 +44,7 @@ Example Site-11:
 ---
 
 <div align="right">
-  <a href='../Missions/README.md'>Prev: Mission Overview</a> - <a href='../Mission 2/README.md'>Next: Mission 2</a>
+  <a href='../../README.md'>Prev: Mission Overview</a> - <a href='../Mission 2/README.md'>Next: Mission 2</a>
 </div>
 
 ---
